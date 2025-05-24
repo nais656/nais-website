@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Media | NAIS</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Optional: Font styling -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+
+    nav {
+      background-color: #2d89ef;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    header {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    main {
+      margin-top: 40px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    section {
+      background: white;
+      padding: 20px;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      margin-bottom: 10px;
+      color: #2d89ef;
+    }
+
+    .download-btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background-color: #2d89ef;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .download-btn:hover {
+      background-color: #1b5eab;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      padding: 20px;
+      background: #2d89ef;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="media.html">Media</a>
+  </nav>
+
+  <header>
+    <h1>NAIS Music & Videos</h1>
+    <p>Listen or download your favorite content!</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Latest Music</h2>
+      <audio controls>
+        <source src="audios/mysong.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <br>
+      <a href="audios/mysong.mp3" download class="download-btn">Download Song</a>
+    </section>
+
+    <section>
+      <h2>Music Video</h2>
+      <video width="auto" height="auto" controls>
+        <source src="videos/myvideo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <br>
+      <a href="videos/myvideo.mp4" download class="download-btn">Download Video</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 NAIS | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
